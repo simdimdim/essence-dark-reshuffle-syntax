@@ -229,6 +229,11 @@ atom-text-editor .search-results .marker.current-result .region,
       color: @pink;
       font-style: italic;
     }
+
+    // JSON
+    &.json {
+      color: @syntax-text-color;
+    }
   }
 
   &.section.embedded {
@@ -284,6 +289,13 @@ atom-text-editor .search-results .marker.current-result .region,
 
     &.id {
       color: @blue;
+    }
+  }
+
+  // CSS
+  &.css, &.sass, &.scss {
+    &.name {
+      text-decoration: none;
     }
   }
 
