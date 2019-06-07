@@ -1,24 +1,17 @@
 @import "colors"; // This defines all syntax variables that syntax themes must implement when they
 // include a syntax-variables.less file.
 // General colors
-@syntax-text-color                      : @white;
-@syntax-cursor-color                    : darken(@white, 22%);
-@syntax-selection-color                 : darken(@gray, 22%);
-@syntax-background-color                : lighten(@black, 6%);
-@syntax-constant-color                  : @deep-purple;
-@syntax-storage-color                   : lighten(@gray,15%);
-@syntax-keyword-color                   : lighten(fade(@cyan,50%),30%); // Guide colors
-@syntax-wrap-guide-color                : lighten(@almost-white, 10%);
-@syntax-indent-guide-color              : lighten(@almost-white, 10%);
-@syntax-invisible-character-color       : lighten(@almost-white, 10%); // For find and replace markers
-@syntax-result-marker-color             : lighten(@almost-white, 10%);
-@syntax-result-marker-color-selected    : lighten(@almost-white, 10%);
-@syntax-marker-fold-color               : darken(@white, 10%); // Gutter colors
-@syntax-gutter-text-color               : lighten(@almost-white, 30%);
-@syntax-gutter-text-color-selected      : lighten(@almost-white, 40%);
-@syntax-gutter-background-color         : @almost-white;
-@syntax-gutter-background-color-selected: lighten(@almost-white, 10%); // For git diff info. i.e. in the gutter
-@syntax-color-renamed                   : @blue;
-@syntax-color-added                     : @green;
-@syntax-color-modified                  : #dfa04d;
-@syntax-color-removed                   : @pink;
+@syntax-background : lighten(@black,12%);
+@syntax-text       : @white;
+@syntax-cursor     : fade(desaturate(@white,80%),40%);
+@syntax-selection  : fade(darken(@white,50%),85%);
+@syntax-type       : desaturate(darken(@white,10%),80%);
+@syntax-constant   : desaturate(lighten(@purple,10%),55%);
+@syntax-keyword    : desaturate(lighten(@orange,15%),25%);
+@syntax-operator   : desaturate(lighten(@red,40%),15%);
+@syntax-storage    : desaturate(lighten(@green,20%),15%);
+@syntax-string     : desaturate(darken(@green,15%),15%);
+@syntax-comment    : fade(@yellow,90%);
+@syntax-method     : desaturate(@blue-light,20%);
+@syntax-variable   : desaturate(lighten(@blue,15%),15%);
+@syntax-ident-guide: fade(@white,20%);
