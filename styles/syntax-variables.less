@@ -1,31 +1,24 @@
-@import "colors";
-
-// This defines all syntax variables that syntax themes must implement when they
+@import "colors"; // This defines all syntax variables that syntax themes must implement when they
 // include a syntax-variables.less file.
-
 // General colors
-@syntax-text-color: lighten(@almost-white, 50%);
-@syntax-cursor-color: lighten(@almost-white, 50%);
-@syntax-selection-color: lighten(@almost-white, 20%);
-@syntax-background-color: @almost-white;
-
-// Guide colors
-@syntax-wrap-guide-color: lighten(@almost-white, 10%);
-@syntax-indent-guide-color: lighten(@almost-white, 10%);
-@syntax-invisible-character-color: lighten(@almost-white, 10%);
-
-// For find and replace markers
-@syntax-result-marker-color: lighten(@almost-white, 10%);
-@syntax-result-marker-color-selected: lighten(@almost-white, 10%);
-
-// Gutter colors
-@syntax-gutter-text-color: lighten(@almost-white, 30%);
-@syntax-gutter-text-color-selected: lighten(@almost-white, 40%);
-@syntax-gutter-background-color: @almost-white;
-@syntax-gutter-background-color-selected: lighten(@almost-white, 10%);
-
-// For git diff info. i.e. in the gutter
-@syntax-color-renamed: @blue;
-@syntax-color-added: #6ec355;
-@syntax-color-modified: #dfa04d;
-@syntax-color-removed: @pink;
+@syntax-text-color                      : @white;
+@syntax-cursor-color                    : darken(@white, 22%);
+@syntax-selection-color                 : darken(@gray, 22%);
+@syntax-background-color                : lighten(@black, 6%);
+@syntax-constant-color                  : @deep-purple;
+@syntax-storage-color                   : lighten(@gray,15%);
+@syntax-keyword-color                   : lighten(fade(@cyan,50%),30%); // Guide colors
+@syntax-wrap-guide-color                : lighten(@almost-white, 10%);
+@syntax-indent-guide-color              : lighten(@almost-white, 10%);
+@syntax-invisible-character-color       : lighten(@almost-white, 10%); // For find and replace markers
+@syntax-result-marker-color             : lighten(@almost-white, 10%);
+@syntax-result-marker-color-selected    : lighten(@almost-white, 10%);
+@syntax-marker-fold-color               : darken(@white, 10%); // Gutter colors
+@syntax-gutter-text-color               : lighten(@almost-white, 30%);
+@syntax-gutter-text-color-selected      : lighten(@almost-white, 40%);
+@syntax-gutter-background-color         : @almost-white;
+@syntax-gutter-background-color-selected: lighten(@almost-white, 10%); // For git diff info. i.e. in the gutter
+@syntax-color-renamed                   : @blue;
+@syntax-color-added                     : @green;
+@syntax-color-modified                  : #dfa04d;
+@syntax-color-removed                   : @pink;
