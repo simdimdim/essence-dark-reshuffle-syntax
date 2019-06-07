@@ -1,15 +1,15 @@
 {
-  "name": "essence-dark-syntax",
+  "name": "essence-dark-reshufle-syntax",
   "theme": "syntax",
   "version": "0.2.1",
-  "description": "A dark syntax theme that is easy on the eyes",
+  "description": "A rip-off of essence-dark-syntax, with a bit of color reshuffling and customization.",
   "keywords": [
     "syntax",
     "theme"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/nerdenough/essence-dark-syntax.git"
+    "url": "https://github.com/simdimdim/essence-dark-syntax.git"
   },
   "license": "MIT",
   "engines": {
