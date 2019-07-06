@@ -19,16 +19,16 @@ atom-text-editor {
 
   .gutter {
     background-color: @syntax-background;
-    color           : @syntax-background;
+    color           : fade(@white,20%);
 
     .line-number {
       &.cursor-line {
         background-color: @syntax-background;
-        color           : @syntax-ident-guide;
+        color           : @syntax-variable;
       }
 
       &.cursor-line-no-selection {
-        color: lighten(@syntax-ident-guide,20%);
+        color: fade(@white,40%);
       }
     }
   }
