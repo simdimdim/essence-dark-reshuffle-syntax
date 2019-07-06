@@ -3,15 +3,16 @@
 // General colors
 @syntax-background : lighten(@black,12%);
 @syntax-text       : @white;
-@syntax-cursor     : fade(desaturate(@white,80%),40%);
+@syntax-cursor     : fade(desaturate(@white,80%),80%);
 @syntax-selection  : fade(darken(@white,50%),85%);
 @syntax-type       : desaturate(darken(@white,10%),80%);
 @syntax-constant   : desaturate(lighten(@purple,10%),55%);
+@syntax-number     : desaturate(mix(@red,@red-light),15%);
 @syntax-keyword    : desaturate(lighten(@orange,15%),25%);
 @syntax-operator   : desaturate(lighten(@red,40%),15%);
 @syntax-storage    : desaturate(lighten(@green,20%),15%);
-@syntax-string     : desaturate(darken(@green,15%),15%);
-@syntax-comment    : fade(@yellow,90%);
-@syntax-method     : desaturate(@blue-light,20%);
-@syntax-variable   : desaturate(lighten(@blue,15%),15%);
+@syntax-string     : fade(@green-light,80%);
+@syntax-comment    : fade(lighten(@black, 60%),90%);
+@syntax-method     : fade(lighten(@blue,20%),85%);
+@syntax-variable   : fade(@white,60%);
 @syntax-ident-guide: fade(@white,20%);
